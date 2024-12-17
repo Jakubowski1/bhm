@@ -1,6 +1,4 @@
-import { Caveat } from 'next/font/google'
-
-const caveat = Caveat({ subsets: ['latin'] })
+import "./globals.css";
 
 export default function RootLayout({
   children,
@@ -10,12 +8,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
-          rel="stylesheet"
-        />
+
       </head>
-      <body className={caveat.className}>{children}</body>
+      <body>{children}</body>
     </html>
   )
 }
